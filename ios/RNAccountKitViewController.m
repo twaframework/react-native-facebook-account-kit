@@ -41,6 +41,8 @@
         viewController.blacklistedCountryCodes = self.countryBlacklist;
     }
     viewController.defaultCountryCode = self.defaultCountry;
+    viewController.uiManager = [[AKFSkinManager alloc]
+                            initWithSkinType:AKFSkinTypeContemporary]
 
 }
 
