@@ -207,6 +207,13 @@ public class RNAccountKitModule extends ReactContextBaseJavaModule implements Ac
         configurationBuilder.setTitleType(
                 AccountKitActivity.TitleType.valueOf(safeString(this.options.getString("titleType").toUpperCase())));
 
+        UIManager uiManager;
+        
+        uiManager = new SkinManager(
+            Skin CONTEMPORARY,
+            @ColorInt int -1);
+
+        
         String initialAuthState = this.options.getString(("initialAuthState"));
         if (!initialAuthState.isEmpty()) {
             configurationBuilder.setInitialAuthState(initialAuthState);
