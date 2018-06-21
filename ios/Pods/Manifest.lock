@@ -1,0 +1,31 @@
+PODS:
+  - AccountKit (4.31.0)
+  - React (0.55.4):
+    - React/Core (= 0.55.4)
+  - React/Core (0.55.4):
+    - yoga (= 0.55.4.React)
+  - yoga (0.55.4.React)
+
+DEPENDENCIES:
+  - AccountKit
+  - React (from `../node_modules/react-native`)
+  - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AccountKit
+
+EXTERNAL SOURCES:
+  React:
+    :path: "../node_modules/react-native"
+  yoga:
+    :path: "../node_modules/react-native/ReactCommon/yoga"
+
+SPEC CHECKSUMS:
+  AccountKit: f3e48047e6fb1c433dff37c61158fd32bbc482cf
+  React: aa2040dbb6f317b95314968021bd2888816e03d5
+  yoga: a23273df0088bf7f2bb7e5d7b00044ea57a2a54a
+
+PODFILE CHECKSUM: c3cc8953c52ddecff4c5a33e077c6dee7e63eeeb
+
+COCOAPODS: 1.5.3

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AD885BAF9A35D17840195B3 /* libPods-RNAccountKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC10C1571699971E2CC0593 /* libPods-RNAccountKit.a */; };
 		D252DDFA1CD39E54005BE160 /* RNAccountKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D252DDF91CD39E54005BE160 /* RNAccountKitViewController.m */; };
 		D25ABA461CD84CD100678BA3 /* RNAccountKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D25ABA451CD84CD100678BA3 /* RNAccountKit.m */; };
 /* End PBXBuildFile section */
@@ -29,8 +30,10 @@
 		D25ABA451CD84CD100678BA3 /* RNAccountKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAccountKit.m; sourceTree = "<group>"; };
 		D2C7C6901CD1552900C9B392 /* libRNAccountKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAccountKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F9099D1CD25E6D009B28E2 /* react-native-facebook-account-kit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "react-native-facebook-account-kit.podspec"; sourceTree = "<group>"; };
-		D2F9099E1CD26033009B28E2 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = "AccountKit.framework"; sourceTree = "<group>"; };
 		D2F909BC1CD28F09009B28E2 /* RNAccountKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAccountKit.h; sourceTree = "<group>"; };
+		D648EE2CD90718E9B71A8A60 /* Pods-RNAccountKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAccountKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNAccountKit/Pods-RNAccountKit.release.xcconfig"; sourceTree = "<group>"; };
+		FA006428D9F1BDB50F713405 /* Pods-RNAccountKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAccountKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNAccountKit/Pods-RNAccountKit.debug.xcconfig"; sourceTree = "<group>"; };
+		FEC10C1571699971E2CC0593 /* libPods-RNAccountKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNAccountKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD885BAF9A35D17840195B3 /* libPods-RNAccountKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +51,7 @@
 		D252DDF71CD394D8005BE160 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D2F9099E1CD26033009B28E2 /* AccountKit.framework */,
+				FEC10C1571699971E2CC0593 /* libPods-RNAccountKit.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -62,6 +66,7 @@
 				D2F9099D1CD25E6D009B28E2 /* react-native-facebook-account-kit.podspec */,
 				D2C7C6911CD1552900C9B392 /* Products */,
 				D252DDF71CD394D8005BE160 /* Frameworks */,
+				D82886BFB0A182882B3EE088 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +78,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D82886BFB0A182882B3EE088 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA006428D9F1BDB50F713405 /* Pods-RNAccountKit.debug.xcconfig */,
+				D648EE2CD90718E9B71A8A60 /* Pods-RNAccountKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +94,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2C7C6991CD1552900C9B392 /* Build configuration list for PBXNativeTarget "RNAccountKit" */;
 			buildPhases = (
+				8C77D318D55632E06126FAD9 /* [CP] Check Pods Manifest.lock */,
 				D2C7C68C1CD1552900C9B392 /* Sources */,
 				D2C7C68D1CD1552900C9B392 /* Frameworks */,
 				D2C7C68E1CD1552900C9B392 /* CopyFiles */,
+				C05AEC8083BA31959922E004 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +139,45 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C77D318D55632E06126FAD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNAccountKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C05AEC8083BA31959922E004 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RNAccountKit/Pods-RNAccountKit-resources.sh",
+				"${PODS_ROOT}/AccountKit/AccountKitStrings.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccountKitStrings.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNAccountKit/Pods-RNAccountKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2C7C68C1CD1552900C9B392 /* Sources */ = {
@@ -229,6 +284,7 @@
 		};
 		D2C7C69A1CD1552900C9B392 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA006428D9F1BDB50F713405 /* Pods-RNAccountKit.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SRCROOT}/**",
@@ -249,6 +305,7 @@
 		};
 		D2C7C69B1CD1552900C9B392 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D648EE2CD90718E9B71A8A60 /* Pods-RNAccountKit.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"${SRCROOT}/**",

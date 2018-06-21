@@ -42,7 +42,7 @@
     }
     viewController.defaultCountryCode = self.defaultCountry;
     viewController.uiManager = [[AKFSkinManager alloc]
-                            initWithSkinType:AKFSkinTypeContemporary]
+                                initWithSkinType:AKFSkinTypeContemporary];
 
 }
 
